@@ -1,9 +1,21 @@
+
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-offset-4 col-md-4">
       <h1 class="bg-primary text-center p25">
-        Bootstrapped!
+        Welcome to Reverse Geocoder
       </h1>
+      <body>
+        <% results.each do |res| %>
+          <p>
+            Address: <%= res[:address] %>
+          </p>
+          <p>
+            Distance: <%= res[:distance].round %>
+          </p>
+        <% end %>
+      </body>
     </div>
   </div>
 </div>

@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'pg'
+gem 'rake'
 gem 'puma'
 gem 'geocoder'
 gem 'faker'
