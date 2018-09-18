@@ -13,7 +13,7 @@ class Main < Sinatra::Base
 end
 
 class Distance
-  # set constant variable of an array of coordinates
+  # set constant variable of an array of [lat, long] coordinates
 
   COORDINATES = [
     [61.582195, -149.443512],
@@ -23,7 +23,7 @@ class Distance
     [35.109937, -89.959983]
   ]
 
-  # aset constant variable of an array of white house coordinates
+  # set constant variable of an array of [lat, long] white house coordinates
   WHITE_HOUSE = [38.8977, 77.0365]
 
   # address takes in [lat, long] coordinates and returns the first address found by geocoder
