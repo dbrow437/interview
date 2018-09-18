@@ -7,14 +7,18 @@
         Welcome to Reverse Geocoder
       </h1>
       <body>
-        <% results.each do |res| %>
-          <p>
-            Address: <%= res[:address] %>
-          </p>
-          <p>
-            Distance: <%= res[:distance].round %>
-          </p>
-        <% end %>
+        <ul class="list-group">
+          <li class="list-group-item active">Address and Distance From White House</li>
+          <li class="list-group-item"><% results.each do |res| %>
+            <p>
+              Address: <%= res[:address] %>
+            </p>
+            <p>
+              Distance: <%= res[:distance].round %>
+            </p>
+            <% end %>
+          </li>
+        </ul>
       </body>
     </div>
   </div>
