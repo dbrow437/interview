@@ -2,7 +2,7 @@ require 'pry'
 require 'faker'
 require 'factory_girl'
 require 'factories'
-require 'pg'
+
 
 Dir[
   File.expand_path('../lib/**/*.rb', __dir__)
